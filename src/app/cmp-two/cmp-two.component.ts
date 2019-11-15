@@ -12,6 +12,10 @@ export class CmpTwoComponent implements OnInit {
 
   value: number;
 
+  get doubleValue(): number {
+    return typeof this.value === 'number' ? this.value * 2 : this.value;
+  }
+
   ngOnInit() {
   }
 
